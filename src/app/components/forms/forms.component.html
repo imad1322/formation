@@ -1,0 +1,33 @@
+<style>
+    .container{
+        padding-top:40px ;
+        padding-left:40px ;
+        padding-right:40px ;
+    }
+</style>
+
+<div class="container">
+<p>forms works!</p>
+  <form (submit)="mySubmit()">
+      <div class="form-group">
+        <label for="nom">nom</label>
+        <input type="text" [(ngModel)]='nom' name="nom" class="form-control" id="nom">
+      </div>
+      <div class="form-group">
+        <label for="prenom">prenom</label>
+        <input type="text" [(ngModel)]='prenom' name="prenom" class="form-control" id="prenom">
+      </div>
+      <div class="form-group">
+          <label for="age">age</label>
+          <input type="text" [(ngModel)]='age' name="age" class="form-control" id="age">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div class="container">
+  <div *ngFor='let item of myShop'>
+    <h3>{{item}}</h3>
+  </div>  
+
+</div> 

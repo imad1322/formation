@@ -1,0 +1,16 @@
+.myColor{
+    color: red;
+    
+}
+.myClass{
+    font-style:italic;
+    font-size: 100px;
+    text-transform: capitalize;
+    color: red;
+}
+.myClass2{
+    font-style:italic;
+    font-size: 100px;
+    text-transform: capitalize;
+    color:blue;
+}
